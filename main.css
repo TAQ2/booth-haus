@@ -1,47 +1,125 @@
-* {
-  box-sizing: border-box;
-  font-family: arial;
+/* GENERAL */
+
+@font-face {
+  font-family: acumin;
+  src: url(AcuminVariableConcept.otf);
+}
+
+html {
+  font-size: 1rem;
+  scroll-behavior: smooth;
 }
 
 body {
-  background-color: black;
+  font-family: acumin;
 }
 
-nav {
-  color: white;
+/* NAVBAR */
+
+.nav {
+  position: fixed;
+  top: 0;
+  /* color: white;
   display: flex;
   width: 25%;
   justify-content: space-between;
-  font-size: 1.5em;
-  /* text-decoration: underline; */
+  font-size: 1.5em; */
+  /* margin-bottom: 0rem; */
 }
 
+/*
 nav div {
   background-size: 1px 1em;
   box-shadow: inset 0 -0.1em white, inset 0 -0.2em #000;
   display: inline;
   cursor: pointer;
+} */
+
+.nav-link {
+  /* padding: 0.5rem 1rem; */
+  /* padding: 1rem 2rem 0rem 0rem; */
+  padding: inherit;
+  margin-right: 2rem;
+  box-shadow: inset 0 -0.1em white, inset 0 -0.2em #000;
+
+  color: white;
 }
 
 nav div:hover {
   opacity: 0.85;
 }
 
-#title {
-  color: white;
-  font-size: 10em;
-}
+/* LANDING SECTION */
 
-#home-section {
+section {
   color: white;
-}
-
-#home-text-container {
+  height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
-#location-time-container {
+#logo-container {
+  margin-bottom: 32px;
+}
+
+#logo-sub {
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 1.4rem;
+}
+
+#logo-sub-sub {
+  margin-top: 4rem;
+  color: #eee;
+  font-style: italic;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 1199.98px) {
+  #logo-sub {
+    font-size: 1.3rem;
+  }
+  #logo--subsub {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  #logo-sub {
+    font-size: 1.1rem;
+  }
+  #logo-sub-sub {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  #logo-sub {
+    font-size: 0.9rem;
+  }
+  #logo-sub-sub {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  /* @Cleanup - how to do this with classes  */
+  #image {
+    padding-bottom: 1.5rem;
+  }
+
+  #logo-sub {
+    font-size: 0.9rem;
+  }
+  #logo-sub-sub {
+    font-size: 0.9rem;
+  }
+}
+/* INFO SECTION */
+#info-section {
+  background-color: white;
+  color: black;
   display: flex;
-  justify-content: space-between;
 }
