@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: acumin;
-  src: url(AcuminVariableConcept.otf);
+  src: url(./assets/AcuminVariableConcept.otf);
 }
 
 html {
@@ -52,11 +52,14 @@ nav div:hover {
 /* LANDING SECTION */
 
 section {
-  color: white;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+#home-section {
+  color: white;
 }
 
 #logo-container {
@@ -71,7 +74,7 @@ section {
 
 #logo-sub-sub {
   margin-top: 4rem;
-  color: #eee;
+  color: #bbb;
   font-style: italic;
   text-align: center;
   font-size: 1.2rem;
@@ -96,6 +99,10 @@ section {
 }
 
 @media (max-width: 767.98px) {
+  /* @Cleanup - how to do this with classes  */
+  #image {
+    padding-bottom: 1.5rem;
+  }
   #logo-sub {
     font-size: 0.9rem;
   }
@@ -117,9 +124,25 @@ section {
     font-size: 0.9rem;
   }
 }
-/* INFO SECTION */
-#info-section {
+/* BOOTH HAUS INFO SECTION */
+#booth-haus-info-section {
   background-color: white;
   color: black;
-  display: flex;
+}
+
+#e123-info-section {
+  background-color: black;
+  color: white;
+}
+
+#find-us-section {
+  color: black;
+}
+
+.google-map {
+  -webkit-filter: grayscale(10%);
+  -moz-filter: grayscale(10%);
+  -ms-filter: grayscale(10%);
+  -o-filter: grayscale(10%);
+  filter: grayscale(10%);
 }
