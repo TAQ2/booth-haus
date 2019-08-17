@@ -1,3 +1,5 @@
 * Contact and instagram footer
 * how to link to charity website
 * Navbar?
+* change top bar colour on android
+* test website on iphone
