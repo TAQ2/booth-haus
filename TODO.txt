@@ -1,12 +1,10 @@
 * Contact and instagram footer
-* make all custom padding use classes or at least rem
-* map is not right fit on mobile
+* contact page?
+
+
 * ig link
 * url changes on nav bar click and uses browser history
-* contact page?
-* take out numbers on images
-
-
+* make all custom padding use classes or at least rem
 * test website on iphone
 
 https://formspree.io/#features
