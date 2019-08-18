@@ -1,5 +1,18 @@
 * Contact and instagram footer
-* how to link to charity website
-* Navbar?
-* change top bar colour on android
+* make all custom padding use classes or at least rem
+* map is not right fit on mobile
+* ig link
+* url changes on nav bar click and uses browser history
+* contact page?
+* take out numbers on images
+
+
 * test website on iphone
+
+https://formspree.io/#features
+
+
+
+QUESTIONS:
+newsletter?
+contact us? email address, contact form?

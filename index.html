@@ -10,6 +10,12 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000000" />
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000000" />
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
     <link
       rel="stylesheet"
@@ -19,21 +25,53 @@
     />
     <link rel="stylesheet" href="main.css" />
   </head>
-  <body>
+  <body style="opacity:0;">
+    <nav class="nav navbar fixed-top navbar-expand-sm navbar-dark">
+      <button
+        class="navbar-toggler"
+        type="button"
+        style="outline:none;"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span
+          ><svg
+            viewBox="0 0 32 32"
+            xml:space="preserve"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            width="32px"
+            stroke="white"
+            fill="white"
+          >
+            <path
+              d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"
+            /></svg
+        ></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <a class="nav-link" href="#booth-haus-info-section">About</a>
+        <a class="nav-link" href="#find-us-section">Find Us</a>
+        <a class="nav-link" href="#find-us-section">Contact</a>
+        <a class="nav-link" href="#booth-haus-info-section">Instagram</a>
+      </div>
+    </nav>
     <div class="container-fluid" style="background-color:black;">
       <div class="container">
-        <!-- <nav class="nav navbar-fixed-top navbar-expand-lg">
-        <a class="nav-link" href="#info">Info</a>
-        <a class="nav-link" href="#">Visitors</a>
-        <a class="nav-link" href="#">Contact</a>
-      </nav> -->
         <section id="home-section">
           <div id="logo-container"></div>
-          <div id="logo-sub">
-            <!-- 153 &mdash; 175 WHITECHAPEL ROAD, E1 1DN<br /> -->
-
+          <div id="logo-sub" class="d-none d-sm-block">
             31 AUG &mdash; 1 SEP 2019&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;11AM
             &mdash; 6PM
+          </div>
+          <div id="logo-sub" class="text-center d-block d-sm-none">
+            31 AUG &mdash; 1 SEP 2019
+          </div>
+          <div id="logo-sub" class="text-center d-block d-sm-none">
+            11AM &mdash; 6PM
           </div>
           <div id="logo-sub-sub">
             A multimedia exhibition in aid of raising money to resettle a
@@ -42,24 +80,28 @@
         </section>
       </div>
     </div>
-    <div class="container">
-      <section id="booth-haus-info-section">
-        <div class="row justify-content-center">
-          <img
-            id="image"
-            class="img img-fluid pb-4"
-            src="https://via.placeholder.com/1500x1000"
-          />
+    <div class="container-fluid">
+      <div class="container">
+        <section id="booth-haus-info-section">
+          <div class="row justify-content-center">
+            <div class="col-md">
+              <img
+                id="image"
+                class="img img-fluid pb-4"
+                src="https://via.placeholder.com/1500x1000"
+              />
 
-          <p>
-            Paragraph 1: Stuff talking about why Booth Haus is so great and why
-            you should come to the exhibition. Content. Content. Content.
-            Content. Content. Content. Content. Content. Content. Content.
-            Content. Content. Content. Content. Content. Content. Content.
-            Content. Content. Content.
-          </p>
-        </div>
-      </section>
+              <p>
+                Paragraph 1: Stuff talking about why Booth Haus is so great and
+                why you should come to the exhibition. Content. Content.
+                Content. Content. Content. Content. Content. Content. Content.
+                Content. Content. Content. Content. Content. Content. Content.
+                Content. Content. Content. Content.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
     </div>
     <div class="container-fluid" style="background-color:black;">
       <div class="container">
@@ -92,24 +134,44 @@
         </section>
       </div>
     </div>
-    <div class="container p-4">
-      <section id="find-us-section">
-        <h1 class="text-center mb-md-4">Finding Us</h1>
-        <div class="embed-responsive embed-responsive-4by3">
-          <iframe
-            class="embed-responsive-item google-map"
-            src="https://maps.google.com/maps?q=booth%20house&t=&z=16&ie=UTF8&iwloc=&output=embed"
-            frameborder="0"
-            scrolling="no"
-            marginheight="0"
-            marginwidth="0"
-          ></iframe>
-        </div>
-      </section>
+    <div class="container-fluid">
+      <div class="container">
+        <section id="find-us-section">
+          <div class="row">
+            <div class="col-4 d-flex flex-column justify-content-between">
+              <p class="text-uppercase font-weight-bold lead">
+                Booth House <br />
+                153-175 Whitechapel Road<br />
+                London<br />
+                E1 1DN
+              </p>
+              <p style="margin-bottom:0;color:#666;" class="font-italic">
+                Paragraph 3: Some things about the history of the building. Like
+                how its really old and stuff and things. Some things about the
+                history of the building.
+              </p>
+            </div>
+            <div class="col-8 align-self-center">
+              <p class="text-uppercase font-weight-bold lead">
+                Booth House <br />
+                153-175 Whitechapel Road<br />
+                London<br />
+                E1 1DN
+              </p>
+              <div class="embed-responsive embed-responsive-4by3">
+                <iframe
+                  class="embed-responsive-item"
+                  src="https://maps.google.com/maps?q=booth%20house%2C%20whitechapel&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
     </div>
-    <div class="container" style="background-color:black;color:white;">
+    <footer class="page-footer" style="background-color:black;color:white;">
       footer
-    </div>
+    </footer>
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
