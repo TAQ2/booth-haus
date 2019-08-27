@@ -2,7 +2,8 @@
 
 @font-face {
   font-family: acumin;
-  src: url(./assets/AcuminVariableConcept.otf);
+  src: url(./assets/AcuminVariableConcept.otf) format("truetype");
+  font-style: normal;
 }
 
 html {
@@ -10,7 +11,7 @@ html {
 }
 
 body {
-  font-family: acumin;
+  font-family: acumin, arial;
 }
 
 /* NAVBAR */
@@ -119,16 +120,31 @@ section {
   color: black;
 }
 
+/* E123 INFO SECTION */
+
 #e123-info-section {
   background-color: black;
   color: white;
 }
 
+/* FIND US SECTION */
 #find-us-section {
   color: black;
 }
 
+/* FOOTER */
 footer {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+
+.footer-icon-link {
+  margin-right: 0;
+  padding: 0 1rem 0 0;
+}
+
+#image {
+  /* max-width: 1500px;
+  max-height: 1000px; */
+  width: 100%;
 }

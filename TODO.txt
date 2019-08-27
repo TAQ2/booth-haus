@@ -1,9 +1,10 @@
-* Contact and instagram footer
-* contact page?
+* content
+*grammarly
+*rupert photo cut by nav
 
-
-* ig link
-* url changes on nav bar click and uses browser history
+* safari font not working
+* contact page? contact email
+* bubble effect of the logo
 * make all custom padding use classes or at least rem
 * test website on iphone
 
