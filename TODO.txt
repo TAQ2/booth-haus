@@ -1,4 +1,5 @@
 * mini logo/ fav icon
+* fix https
 
 * safari font not working
 * contact page? contact email
