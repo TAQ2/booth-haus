@@ -70,7 +70,24 @@ section {
   font-size: 1.2rem;
 }
 
+/* @Incomplete - rename */
+#image1 {
+  max-width: 80%;
+  height: auto;
+}
+
+.img-legend {
+  max-width: 80%;
+}
+
 @media (max-width: 1199.98px) {
+  #image1 {
+    max-width: 100%;
+    height: auto;
+  }
+  .img-legend {
+    max-width: 100%;
+  }
   #logo-sub {
     font-size: 1.3rem;
   }
@@ -90,9 +107,9 @@ section {
 
 @media (max-width: 767.98px) {
   /* @Cleanup - how to do this with classes  */
-  #image {
+  /* #image {
     padding-bottom: 1.5rem;
-  }
+  } */
   #logo-sub {
     font-size: 0.9rem;
   }
@@ -103,9 +120,9 @@ section {
 
 @media (max-width: 575.98px) {
   /* @Cleanup - how to do this with classes  */
-  #image {
+  /* #image {
     padding-bottom: 1.5rem;
-  }
+  } */
 
   #logo-sub {
     font-size: 0.9rem;
@@ -146,5 +163,5 @@ footer {
 #image {
   /* max-width: 1500px;
   max-height: 1000px; */
-  width: 100%;
+  /* width: 100%; */
 }
