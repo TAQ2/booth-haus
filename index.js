@@ -39,6 +39,7 @@ $(document).ready(function() {
 
   $("video").on("ended", function() {
     $(".video").fadeOut(10);
-    $("#home-section *:not(.video)").fadeIn(2000);
+    $("#logo-container").fadeIn(2000);
+    $("#logo-sub-sub").fadeIn(2000);
   });
 });

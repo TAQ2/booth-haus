@@ -1,5 +1,6 @@
 * nav on gallery
 * images need to be organized
+* images on homepage
 
 * mini logo/ fav icon
 * SEO
