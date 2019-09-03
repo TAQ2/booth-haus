@@ -1,3 +1,6 @@
+* nav on gallery
+* images need to be organized
+
 * mini logo/ fav icon
 * SEO
 * safari font not working
