@@ -1,6 +1,5 @@
 * mini logo/ fav icon
-* fix https
-
+* SEO
 * safari font not working
 * contact page? contact email
 * bubble effect of the logo

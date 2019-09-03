@@ -35,9 +35,10 @@ $(document).ready(function() {
   collapseNavMenuOnLinkClick();
   smoothScrollingOfNav();
 
-  // load logo
-  $("#logo-container").load("./assets/logo.svg", function() {
-    // render page
-    $("body").animate({ opacity: 1 }, 600);
+  $("body").animate({ opacity: 1 }, 600);
+
+  $("video").on("ended", function() {
+    $(".video").fadeOut(10);
+    $("#home-section *:not(.video)").fadeIn(2000);
   });
 });

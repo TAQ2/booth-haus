@@ -165,3 +165,28 @@ footer {
   max-height: 1000px; */
   /* width: 100%; */
 }
+
+#video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+
+#video-legend {
+  position: absolute;
+  z-index: 2;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+#home-section *:not(.video) {
+  display: none;
+}
