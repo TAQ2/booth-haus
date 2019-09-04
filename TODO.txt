@@ -1,5 +1,7 @@
-* images need to be organized
+* fix the nav bar
+* images need to be organised
 * images on homepage
+* is the message on the video correct?
 
 * gallery click image
 * fav icon
