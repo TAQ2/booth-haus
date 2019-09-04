@@ -1,7 +1,7 @@
 * images need to be organized
 * images on homepage
-* gallery click image
 
+* gallery click image
 * fav icon
 * SEO
 * safari font not working
