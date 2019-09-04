@@ -37,7 +37,52 @@
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
-    <div id="myMosaic">
+    <nav class="nav navbar fixed-top navbar-expand-sm navbar-dark">
+      <a href="/" class="py-1 pl-1"
+        ><img src="assets/logo-short.png" width="58"
+      /></a>
+      <div class="ml-auto"></div>
+      <button
+        class="navbar-toggler"
+        type="button"
+        style="outline:none;"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span
+          ><svg
+            viewBox="0 0 32 32"
+            xml:space="preserve"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            width="32px"
+            stroke="white"
+            fill="white"
+          >
+            <path
+              d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"
+            /></svg
+        ></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- <a href="/"><img src="assets/logo-short.png" width="72"/></a> -->
+        <div class="ml-auto"></div>
+        <a class="nav-link" href="/gallery">Gallery</a>
+        <!-- <a class="nav-link" href="#find-us-section">Contact</a> -->
+        <a
+          class="nav-link"
+          href="https://www.instagram.com/booth_haus/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Instagram
+        </a>
+      </div>
+    </nav>
+    <div id="myMosaic" style="margin-top: 2.9rem;">
       <img width="1600" height="1200" src="assets/gallery_images/10.jpg" />
       <img width="2400" height="1600" src="assets/gallery_images/1.jpg" />
       <img width="1600" height="1066" src="assets/gallery_images/11.jpg" />
@@ -146,7 +191,15 @@
   </body>
 
   <script>
+    function collapseNavMenuOnLinkClick() {
+      $(".nav-link").on("click", function() {
+        $(".navbar-collapse").collapse("hide");
+      });
+    }
     $("#myMosaic").Mosaic({ innerGap: 1 });
+    $(document).ready(function() {
+      collapseNavMenuOnLinkClick();
+    });
   </script>
   <script
     src="https://code.jquery.com/jquery-3.4.1.min.js"

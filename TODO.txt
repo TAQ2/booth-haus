@@ -1,9 +1,8 @@
-* nav on gallery
 * images need to be organized
 * images on homepage
-*gallery click image
+* gallery click image
 
-* mini logo/ fav icon
+* fav icon
 * SEO
 * safari font not working
 * contact page? contact email
