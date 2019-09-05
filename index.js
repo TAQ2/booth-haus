@@ -9,10 +9,15 @@ $(document).ready(function() {
   // smoothScrollingOfNav();
 
   $("body").animate({ opacity: 1 }, 600);
+  $("#logo-container").fadeIn(0);
 
   $("video").on("ended", function() {
-    $(".video").fadeOut(10);
-    $("#logo-container").fadeIn(2000);
-    $("#logo-sub-sub").fadeIn(2000);
+    $(".video").fadeOut(1000);
+    $("#logo-container").animate(
+      { marginTop: "0", paddingLeft: "0", paddingRight: "0" },
+      3000
+    );
+    // $("#logo-container").fadeIn(2000);
+    $("#logo-sub-sub").animate({ opacity: 1 }, 5000);
   });
 });

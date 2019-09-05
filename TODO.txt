@@ -1,7 +1,7 @@
-* fix the nav bar
 * images need to be organised
 * images on homepage
 * is the message on the video correct?
+* is it bad to upload dev files to website?
 
 * gallery click image
 * fav icon
