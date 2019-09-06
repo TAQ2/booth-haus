@@ -1,6 +1,8 @@
 * images need to be organised
 * is it bad to upload dev files to website?
 
+* resize image for faster loading?
+
 * gallery click image
 * fav icon
 * SEO
